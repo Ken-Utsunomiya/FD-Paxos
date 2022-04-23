@@ -1,0 +1,328 @@
+(?<host>\S*) (?<clock>{.*})\n(?<event>.*)
+
+server1 {"server1":1}
+5239862747748523025 CreateTrace {}
+server1 {"server1":2}
+5239862747748523025 ServerStart {"ServerId":1}
+server1 {"server1":3}
+6203507263597722468 CreateTrace {}
+server1 {"server1":4}
+6203507263597722468 PaxosInit {"ServerId":1}
+server1 {"server1":5}
+5239862747748523025 ServerJoining {"ServerId":1}
+server2 {"server2":1}
+3719945944721177755 CreateTrace {}
+server2 {"server2":2}
+3719945944721177755 ServerStart {"ServerId":2}
+server2 {"server2":3}
+2631572737352392081 CreateTrace {}
+server2 {"server2":4}
+2631572737352392081 PaxosInit {"ServerId":2}
+server2 {"server2":5}
+3719945944721177755 ServerJoining {"ServerId":2}
+server4 {"server4":1}
+2472375659942406044 CreateTrace {}
+server4 {"server4":2}
+2472375659942406044 ServerStart {"ServerId":4}
+server4 {"server4":3}
+3337753488987578964 CreateTrace {}
+server4 {"server4":4}
+3337753488987578964 PaxosInit {"ServerId":4}
+server4 {"server4":5}
+2472375659942406044 ServerJoining {"ServerId":4}
+server5 {"server5":1}
+8131126186891607343 CreateTrace {}
+server5 {"server5":2}
+8131126186891607343 ServerStart {"ServerId":5}
+server5 {"server5":3}
+5332043281571771361 CreateTrace {}
+server5 {"server5":4}
+5332043281571771361 PaxosInit {"ServerId":5}
+server5 {"server5":5}
+8131126186891607343 ServerJoining {"ServerId":5}
+server3 {"server3":1}
+8849408118541976094 CreateTrace {}
+server3 {"server3":2}
+8849408118541976094 ServerStart {"ServerId":3}
+server3 {"server3":3}
+891464650842504921 CreateTrace {}
+server3 {"server3":4}
+891464650842504921 PaxosInit {"ServerId":3}
+server3 {"server3":5}
+8849408118541976094 ServerJoining {"ServerId":3}
+server3 {"server3":6}
+8849408118541976094 ServerJoined {"ServerId":3}
+server3 {"server3":7}
+8849408118541976094 AllServersJoined {"ServerId":3}
+server3 {"server3":8}
+891464650842504921 InitializeState {"ServerId":3}
+server2 {"server2":6}
+3719945944721177755 ServerJoined {"ServerId":2}
+server2 {"server2":7}
+3719945944721177755 AllServersJoined {"ServerId":2}
+server4 {"server4":6}
+2472375659942406044 ServerJoined {"ServerId":4}
+server4 {"server4":7}
+2472375659942406044 AllServersJoined {"ServerId":4}
+server2 {"server2":8}
+2631572737352392081 InitializeState {"ServerId":2}
+server4 {"server4":8}
+3337753488987578964 InitializeState {"ServerId":4}
+server1 {"server1":6}
+5239862747748523025 ServerJoined {"ServerId":1}
+server1 {"server1":7}
+5239862747748523025 AllServersJoined {"ServerId":1}
+server1 {"server1":8}
+6203507263597722468 InitializeState {"ServerId":1}
+server5 {"server5":6}
+8131126186891607343 ServerJoined {"ServerId":5}
+server5 {"server5":7}
+8131126186891607343 AllServersJoined {"ServerId":5}
+server5 {"server5":8}
+5332043281571771361 InitializeState {"ServerId":5}
+server1 {"server1":9}
+5239862747748523025 ServerFailureDetected {"FailedServerId":5,"GId":1001}
+server1 {"server1":10}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEK"}
+server3 {"server3":9}
+8849408118541976094 ServerFailureDetected {"FailedServerId":5,"GId":1003}
+server3 {"server3":10}
+8849408118541976094 GenerateTokenTrace {"Token":"p3NlcnZlcjPPes9pzDInAh6Bp3NlcnZlcjMK"}
+server4 {"server4":9}
+2472375659942406044 ServerFailureDetected {"FailedServerId":5,"GId":1004}
+server4 {"server4":10}
+2472375659942406044 GenerateTokenTrace {"Token":"p3NlcnZlcjTPIk+kkEIwZ5yBp3NlcnZlcjQK"}
+server1 {"server1":11}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEK"}
+server1 {"server1":12}
+5239862747748523025 PrepareReq {"From":1,"PSN":1,"GId":1001}
+server1 {"server1":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEN"}
+server1 {"server1":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEN"}
+server1 {"server1":15}
+5239862747748523025 PrepareRecvd {"From":1,"To":1,"PSN":1,"GId":1001}
+server1 {"server1":16}
+5239862747748523025 PromiseReq {"From":1,"PSN":1,"GId":1001}
+server1 {"server1":17}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjER"}
+server2 {"server2":9, "server1":13}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEN"}
+server2 {"server2":10, "server1":13}
+5239862747748523025 PrepareRecvd {"From":1,"To":2,"PSN":1,"GId":1001}
+server2 {"server2":11, "server1":13}
+5239862747748523025 PromiseReq {"From":2,"PSN":1,"GId":1001}
+server2 {"server2":12, "server1":13}
+3719945944721177755 ServerFailureDetected {"FailedServerId":5,"GId":1002}
+server2 {"server2":13, "server1":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGCp3NlcnZlcjINp3NlcnZlcjEN"}
+server2 {"server2":14, "server1":13}
+3719945944721177755 GenerateTokenTrace {"Token":"p3NlcnZlcjLPM5/nIKrCvJuCp3NlcnZlcjIOp3NlcnZlcjEN"}
+server3 {"server3":11, "server1":13}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEN"}
+server3 {"server3":12, "server1":13}
+5239862747748523025 PrepareRecvd {"From":1,"To":3,"PSN":1,"GId":1001}
+server3 {"server1":13, "server3":13}
+5239862747748523025 PromiseReq {"From":3,"PSN":1,"GId":1001}
+server3 {"server1":13, "server3":14}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGCp3NlcnZlcjMOp3NlcnZlcjEN"}
+server4 {"server4":11, "server1":13}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjEN"}
+server4 {"server4":12, "server1":13}
+5239862747748523025 PrepareRecvd {"From":1,"To":4,"PSN":1,"GId":1001}
+server4 {"server4":13, "server1":13}
+5239862747748523025 PromiseReq {"From":4,"PSN":1,"GId":1001}
+server4 {"server1":13, "server4":14}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGCp3NlcnZlcjENp3NlcnZlcjQO"}
+server1 {"server1":18}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGBp3NlcnZlcjER"}
+server1 {"server1":19}
+5239862747748523025 PromiseRecvd {"From":1,"To":1,"PSN":1,"GId":1001}
+server1 {"server1":20, "server2":13}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGCp3NlcnZlcjINp3NlcnZlcjEN"}
+server1 {"server2":13, "server1":21}
+5239862747748523025 PromiseRecvd {"From":2,"To":1,"PSN":1,"GId":1001}
+server1 {"server3":14, "server1":22, "server2":13}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGCp3NlcnZlcjMOp3NlcnZlcjEN"}
+server1 {"server3":14, "server1":23, "server2":13}
+5239862747748523025 PromiseRecvd {"From":3,"To":1,"PSN":1,"GId":1001}
+server1 {"server3":14, "server4":14, "server1":24, "server2":13}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGCp3NlcnZlcjENp3NlcnZlcjQO"}
+server1 {"server1":25, "server2":13, "server3":14, "server4":14}
+5239862747748523025 PromiseRecvd {"From":4,"To":1,"PSN":1,"GId":1001}
+server1 {"server3":14, "server4":14, "server1":26, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEap3NlcnZlcjINp3NlcnZlcjMO"}
+server1 {"server1":27, "server2":13, "server3":14, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEap3NlcnZlcjINp3NlcnZlcjMO"}
+server1 {"server3":14, "server4":14, "server1":28, "server2":13}
+5239862747748523025 ProposeReq {"From":1,"PSN":1,"GId":1001}
+server1 {"server4":14, "server1":29, "server2":13, "server3":14}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server1 {"server4":14, "server1":30, "server2":13, "server3":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server3 {"server4":14, "server2":13, "server3":15, "server1":29}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server1 {"server3":14, "server4":14, "server1":31, "server2":13}
+5239862747748523025 ProposeRecvd {"From":1,"To":1,"PSN":1,"GId":1001}
+server4 {"server2":13, "server3":14, "server4":15, "server1":29}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server3 {"server4":14, "server2":13, "server3":16, "server1":29}
+5239862747748523025 ProposeRecvd {"From":1,"To":3,"PSN":1,"GId":1001}
+server1 {"server1":32, "server2":13, "server3":14, "server4":14}
+5239862747748523025 ProposalChosen {"ServerId":1,"PSN":1,"GId":1001}
+server4 {"server2":13, "server3":14, "server4":16, "server1":29}
+5239862747748523025 ProposeRecvd {"From":1,"To":4,"PSN":1,"GId":1001}
+server3 {"server4":14, "server2":13, "server3":17, "server1":29}
+5239862747748523025 ProposalChosen {"ServerId":3,"PSN":1,"GId":1001}
+server1 {"server3":14, "server4":14, "server1":33, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEhp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server3 {"server3":18, "server1":29, "server4":14, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjINp3NlcnZlcjMSp3NlcnZlcjEdp3NlcnZlcjQO"}
+server2 {"server2":15, "server1":29, "server3":14, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server4 {"server3":14, "server4":17, "server1":29, "server2":13}
+5239862747748523025 ProposalChosen {"ServerId":4,"PSN":1,"GId":1001}
+server1 {"server4":14, "server1":34, "server2":13, "server3":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEhp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQO"}
+server3 {"server2":13, "server3":19, "server1":29, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjINp3NlcnZlcjMSp3NlcnZlcjEdp3NlcnZlcjQO"}
+server1 {"server1":35, "server2":13, "server3":14, "server4":14}
+5239862747748523025 BroadcastReq {"From":1,"PSN":1,"GId":1001}
+server4 {"server2":13, "server3":14, "server4":18, "server1":29}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjQSp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMO"}
+server3 {"server3":20, "server1":29, "server4":14, "server2":13}
+5239862747748523025 BroadcastReq {"From":3,"PSN":1,"GId":1001}
+server1 {"server1":36, "server2":13, "server3":14, "server4":14}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMO"}
+server2 {"server1":29, "server3":14, "server4":14, "server2":16}
+5239862747748523025 ProposeRecvd {"From":1,"To":2,"PSN":1,"GId":1001}
+server4 {"server4":19, "server1":29, "server2":13, "server3":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjQSp3NlcnZlcjEdp3NlcnZlcjINp3NlcnZlcjMO"}
+server3 {"server1":29, "server4":14, "server2":13, "server3":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjEdp3NlcnZlcjQOp3NlcnZlcjIN"}
+server2 {"server2":17, "server1":29, "server3":14, "server4":14}
+5239862747748523025 ProposalChosen {"ServerId":2,"PSN":1,"GId":1001}
+server4 {"server4":20, "server1":29, "server2":13, "server3":14}
+5239862747748523025 BroadcastReq {"From":4,"PSN":1,"GId":1001}
+server1 {"server1":37, "server2":13, "server3":14, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMO"}
+server1 {"server3":14, "server4":14, "server1":38, "server2":13}
+5239862747748523025 BroadcastRecvd {"From":1,"To":1,"PSN":1,"GId":1001}
+server4 {"server3":14, "server4":21, "server1":29, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjMOp3NlcnZlcjQVp3NlcnZlcjEdp3NlcnZlcjIN"}
+server2 {"server1":29, "server3":14, "server4":14, "server2":18}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjISp3NlcnZlcjEdp3NlcnZlcjMOp3NlcnZlcjQO"}
+server3 {"server2":13, "server3":22, "server1":36, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMO"}
+server1 {"server3":14, "server4":14, "server1":39, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjINp3NlcnZlcjMOp3NlcnZlcjQOp3NlcnZlcjEn"}
+server4 {"server4":22, "server1":36, "server2":13, "server3":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMO"}
+server3 {"server4":14, "server2":13, "server3":23, "server1":36}
+5239862747748523025 BroadcastRecvd {"From":1,"To":3,"PSN":1,"GId":1001}
+server1 {"server1":40, "server2":13, "server3":21, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjEdp3NlcnZlcjQOp3NlcnZlcjIN"}
+server4 {"server2":13, "server3":14, "server4":23, "server1":36}
+5239862747748523025 BroadcastRecvd {"From":1,"To":4,"PSN":1,"GId":1001}
+server3 {"server3":24, "server1":36, "server4":14, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjINp3NlcnZlcjMYp3NlcnZlcjEkp3NlcnZlcjQO"}
+server1 {"server3":21, "server4":14, "server1":41, "server2":13}
+5239862747748523025 BroadcastRecvd {"From":3,"To":1,"PSN":1,"GId":1001}
+server2 {"server4":14, "server2":19, "server1":29, "server3":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjISp3NlcnZlcjEdp3NlcnZlcjMOp3NlcnZlcjQO"}
+server1 {"server1":42, "server2":13, "server3":21, "server4":14}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjINp3NlcnZlcjMVp3NlcnZlcjQOp3NlcnZlcjEq"}
+server3 {"server1":36, "server4":14, "server2":13, "server3":25}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjEdp3NlcnZlcjQOp3NlcnZlcjIN"}
+server4 {"server4":24, "server1":36, "server2":13, "server3":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjEdp3NlcnZlcjQOp3NlcnZlcjIN"}
+server1 {"server1":43, "server2":13, "server3":21, "server4":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjMOp3NlcnZlcjQVp3NlcnZlcjEdp3NlcnZlcjIN"}
+server3 {"server2":13, "server3":26, "server1":36, "server4":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjMOp3NlcnZlcjQVp3NlcnZlcjEdp3NlcnZlcjIN"}
+server2 {"server2":20, "server1":36, "server3":14, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjQOp3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMO"}
+server1 {"server1":44, "server2":13, "server3":21, "server4":21}
+5239862747748523025 BroadcastRecvd {"From":4,"To":1,"PSN":1,"GId":1001}
+server3 {"server3":27, "server1":36, "server4":21, "server2":13}
+5239862747748523025 BroadcastRecvd {"From":3,"To":3,"PSN":1,"GId":1001}
+server4 {"server2":13, "server3":21, "server4":25, "server1":36}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjMOp3NlcnZlcjQVp3NlcnZlcjEdp3NlcnZlcjIN"}
+server1 {"server1":45, "server2":13, "server3":21, "server4":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjEtp3NlcnZlcjIN"}
+server3 {"server1":36, "server4":21, "server2":13, "server3":28}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMcp3NlcnZlcjEkp3NlcnZlcjQVp3NlcnZlcjIN"}
+server4 {"server4":26, "server1":36, "server2":13, "server3":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjQap3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMV"}
+server3 {"server1":36, "server4":21, "server2":13, "server3":29}
+5239862747748523025 BroadcastRecvd {"From":4,"To":3,"PSN":1,"GId":1001}
+server4 {"server4":27, "server1":36, "server2":13, "server3":21}
+5239862747748523025 BroadcastRecvd {"From":3,"To":4,"PSN":1,"GId":1001}
+server2 {"server2":21, "server1":36, "server3":21, "server4":14}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjEdp3NlcnZlcjQOp3NlcnZlcjIN"}
+server1 {"server2":13, "server3":21, "server4":21, "server1":46}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjEtp3NlcnZlcjIN"}
+server4 {"server4":28, "server1":36, "server2":13, "server3":21}
+5239862747748523025 BroadcastRecvd {"From":4,"To":4,"PSN":1,"GId":1001}
+server1 {"server3":21, "server4":21, "server1":47, "server2":13}
+5239862747748523025 Learn {"ServerId":1,"Servers":{"1":{"IsAlive":true,"Id":1},"2":{"IsAlive":true,"Id":2},"3":{"IsAlive":true,"Id":3},"4":{"IsAlive":true,"Id":4},"5":{"IsAlive":false,"Id":5}},"GId":1001}
+server2 {"server2":22, "server1":36, "server3":21, "server4":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjMOp3NlcnZlcjQVp3NlcnZlcjEdp3NlcnZlcjIN"}
+server3 {"server3":30, "server1":36, "server4":21, "server2":13}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjQVp3NlcnZlcjINp3NlcnZlcjMe"}
+server4 {"server2":13, "server3":21, "server4":29, "server1":36}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMVp3NlcnZlcjQd"}
+server3 {"server4":21, "server2":13, "server3":31, "server1":36}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjQVp3NlcnZlcjINp3NlcnZlcjMe"}
+server2 {"server2":23, "server1":36, "server3":21, "server4":21}
+5239862747748523025 BroadcastReq {"From":2,"PSN":1,"GId":1001}
+server4 {"server4":30, "server1":36, "server2":13, "server3":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjQep3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMV"}
+server3 {"server3":32, "server1":36, "server4":21, "server2":13}
+5239862747748523025 Learn {"ServerId":3,"Servers":{"1":{"IsAlive":true,"Id":1},"2":{"IsAlive":true,"Id":2},"3":{"IsAlive":true,"Id":3},"4":{"IsAlive":true,"Id":4},"5":{"IsAlive":false,"Id":5}},"GId":1001}
+server4 {"server2":13, "server3":21, "server4":31, "server1":36}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjQep3NlcnZlcjEkp3NlcnZlcjINp3NlcnZlcjMV"}
+server2 {"server2":24, "server1":36, "server3":21, "server4":21}
+5239862747748523025 BroadcastRecvd {"From":1,"To":2,"PSN":1,"GId":1001}
+server4 {"server4":32, "server1":36, "server2":13, "server3":21}
+5239862747748523025 Learn {"ServerId":4,"Servers":{"1":{"IsAlive":true,"Id":1},"2":{"IsAlive":true,"Id":2},"3":{"IsAlive":true,"Id":3},"4":{"IsAlive":true,"Id":4},"5":{"IsAlive":false,"Id":5}},"GId":1001}
+server2 {"server2":25, "server1":36, "server3":21, "server4":21}
+5239862747748523025 BroadcastRecvd {"From":3,"To":2,"PSN":1,"GId":1001}
+server2 {"server4":21, "server2":26, "server1":36, "server3":21}
+5239862747748523025 BroadcastRecvd {"From":4,"To":2,"PSN":1,"GId":1001}
+server2 {"server4":21, "server2":27, "server1":36, "server3":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjIb"}
+server2 {"server3":21, "server4":21, "server2":28, "server1":36}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjQVp3NlcnZlcjIcp3NlcnZlcjEkp3NlcnZlcjMV"}
+server1 {"server4":21, "server1":48, "server2":27, "server3":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjIb"}
+server2 {"server1":36, "server3":21, "server4":21, "server2":29}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjIdp3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQV"}
+server3 {"server2":27, "server3":33, "server1":36, "server4":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjIb"}
+server1 {"server3":21, "server4":21, "server1":49, "server2":27}
+5239862747748523025 BroadcastRecvd {"From":2,"To":1,"PSN":1,"GId":1001}
+server3 {"server3":34, "server1":36, "server4":21, "server2":27}
+5239862747748523025 BroadcastRecvd {"From":2,"To":3,"PSN":1,"GId":1001}
+server2 {"server3":21, "server4":21, "server2":30, "server1":36}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjIep3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQV"}
+server4 {"server1":36, "server2":27, "server3":21, "server4":33}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjIb"}
+server1 {"server1":50, "server2":27, "server3":21, "server4":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjHPSLe7aDdaXBGEp3NlcnZlcjEyp3NlcnZlcjIbp3NlcnZlcjMVp3NlcnZlcjQV"}
+server3 {"server3":35, "server1":36, "server4":21, "server2":27}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjPPSLe7aDdaXBGEp3NlcnZlcjMjp3NlcnZlcjEkp3NlcnZlcjQVp3NlcnZlcjIb"}
+server2 {"server4":21, "server2":31, "server1":36, "server3":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQVp3NlcnZlcjIb"}
+server4 {"server1":36, "server2":27, "server3":21, "server4":34}
+5239862747748523025 BroadcastRecvd {"From":2,"To":4,"PSN":1,"GId":1001}
+server2 {"server2":32, "server1":36, "server3":21, "server4":21}
+5239862747748523025 ReceiveTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjIep3NlcnZlcjEkp3NlcnZlcjMVp3NlcnZlcjQV"}
+server4 {"server2":27, "server3":21, "server4":35, "server1":36}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjTPSLe7aDdaXBGEp3NlcnZlcjEkp3NlcnZlcjIbp3NlcnZlcjMVp3NlcnZlcjQj"}
+server2 {"server1":36, "server3":21, "server4":21, "server2":33}
+5239862747748523025 Learn {"ServerId":2,"Servers":{"1":{"IsAlive":true,"Id":1},"2":{"IsAlive":true,"Id":2},"3":{"IsAlive":true,"Id":3},"4":{"IsAlive":true,"Id":4},"5":{"IsAlive":false,"Id":5}},"GId":1001}
+server2 {"server2":34, "server1":36, "server3":21, "server4":21}
+5239862747748523025 BroadcastRecvd {"From":2,"To":2,"PSN":1,"GId":1001}
+server2 {"server2":35, "server1":36, "server3":21, "server4":21}
+5239862747748523025 GenerateTokenTrace {"Token":"p3NlcnZlcjLPSLe7aDdaXBGEp3NlcnZlcjQVp3NlcnZlcjIjp3NlcnZlcjEkp3NlcnZlcjMV"}
