@@ -1,6 +1,4 @@
-package cpsc416_proj_johnnybc_mikuh_nbosse_jmhirsch_sassansh_fbcaiado
-
 bin/
 .idea/
-shiviz_output.log
-trace_output.log
+*.log
+.DS_Store
