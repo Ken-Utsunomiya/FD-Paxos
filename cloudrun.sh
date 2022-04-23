@@ -10,11 +10,11 @@ NC='\033[0m'
 
 shopt -s extglob nullglob
 
-user="azureuser"
-ips=("52.146.9.129" "20.115.41.241" "20.115.46.30" "20.115.41.200" "20.115.42.189" "20.106.216.88" "20.106.216.50" "20.83.182.178" "20.106.216.105" "20.231.76.135" "20.106.216.100")
-clientip="20.115.41.254"
-tracingip="20.115.43.176"
-pass="fwCm^m6XR41s1v&m"
+user="TODO: username"
+ips=("TODO: add 11 IP addresses")
+clientip="TODO: client IP"
+tracingip="TODO: tracing server IP"
+pass="TODO: password"
 
 uploadToServer() {
   sshpass -p "$pass" scp "project.zip" "$user@$1:~/project.zip"
