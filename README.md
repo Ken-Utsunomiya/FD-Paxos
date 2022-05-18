@@ -17,10 +17,8 @@
 - クラッシュしたサーバーの検知
 - Paxos プロセスの始動
 
-### Paxos プロセス
 
-
-
+## :thought_balloon:　Paxos プロセスについて
 ### ShiViz Log
 ![ShiViz1](https://user-images.githubusercontent.com/81115999/166919675-10e1f639-7337-4310-b023-b0280741313b.png)
 
