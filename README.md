@@ -19,7 +19,10 @@
 
 
 ## :thought_balloon:　Paxos プロセスについて
-### 
+- 全てのサーバーは　Proposer/Acceptor/Learner　のすべての役割を担う
+- サーバー クラッシュを発見した
+### Phase 1: Prepare & Promise
+
 
 ## :hammer: 使用技術
 |||
