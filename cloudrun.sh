@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# @Author: Jonathan Hirsch
-# @Date:   2022-04-16
-# Purpose: initialize required apt packages in specified ubuntu VMs, upload code to vms, run and control servers
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
