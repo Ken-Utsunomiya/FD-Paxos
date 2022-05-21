@@ -20,7 +20,8 @@
 
 ## :thought_balloon:　Paxos プロセスについて
 - 全てのサーバーは　Proposer/Acceptor/Learner　のすべての役割を担う
-- サーバー クラッシュを発見した
+- サーバー クラッシュを検知したサーバーが　Paxos プロセスを始動し、Proposerの役割を担う
+
 ### Phase 1: Prepare & Promise
 
 
