@@ -1,6 +1,6 @@
 # Failure Detection with Paxos Algorithm
 
-コンセンサスアルゴリズムの一種である　[Paxos algorithm](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)　を使用したサーバーダウン検知システム。
+コンセンサスアルゴリズムの一種である　[Paxos algorithm](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)　を組み込んだサーバーダウン検知システム。
 
 ## :pushpin:　開発概要
 - 6人によるチーム開発
@@ -9,7 +9,7 @@
 ## :scroll:　機能概要
 
 ### クライアント
-- ダウンしていないサーバーからシステムの状況（どのサーバーがダウンしているか/していないか）を取得
+- ダウンしていないサーバーから、システムの状況（どのサーバーがダウンしているか/していないか）を取得
 
 ### サーバー 
 - システムへのジョイン
@@ -23,6 +23,12 @@
 - サーバー クラッシュを検知したサーバーが　Paxos プロセスを始動し、Proposerの役割を担う
 
 ### Phase 1: Prepare & Promise
+
+### Phase 2: Propose
+
+### Phase 3: Broadcast
+
+### Phase 4: Learn
 
 
 ## :hammer: 使用技術
