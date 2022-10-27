@@ -1,6 +1,6 @@
 # Failure Detection with Paxos Algorithm
 
-コンセンサスアルゴリズムの一種である　[Paxos algorithm](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)　を組み込んだサーバーダウン検知システム。
+コンセンサスアルゴリズムの一種である　[Paxos algorithm](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)　を組み込んだサーバーダウン検知システム。サーバーの集合がお互いを監視しあい、どのサーバーがダウンしているのかという情報を全てのサーバー間で共有する。
 
 ## :pushpin:　開発概要
 - 6人によるチーム開発
@@ -20,16 +20,22 @@
 
 ## :thought_balloon:　Paxos プロセスについて
 - 全てのサーバーは　Proposer/Acceptor/Learner　のすべての役割を担う
-- サーバー クラッシュを検知したサーバーが　Paxos プロセスを始動し、同時にProposerの役割を担う
-- Paxos プロセスは下記の4つのフェーズで構成される
+- Paxos プロセス　(成功ケース)は下記の4つのフェーズで構成される
 
 ### Phase 1: Prepare & Promise
+1. サーバー クラッシュを検知したサーバーが　Paxos プロセスを始動し、同時にProposerの役割を担う
+2. Proposer が他の全てのサーバーにどのサーバーがダウンしたのかを知らせる
+3. 他のサーバーが Proposer からのメッセージを受け取り、それに Promise で応える。その場合、そのサーバーは Acceptor の役割を担う
+4. Proposer がシステム内のダウンしていないサーバーの過半数から Promise を受け取る
 
 ### Phase 2: Propose
+1. Proposer が Acceptor に 新しいシステムの情報を持つ Proposal を送る
+2. Acceptor が同様のサーバーダウンを検知していた場合、Proposal を承認する
 
 ### Phase 3: Broadcast
-
-### Phase 4: Learn
+1. Proposal を承認した Acceptor　が他の全てのサーバーに Broadcast メッセージを送る
+2. このフェーズでは全てのサーバーが Learner の役割を担い、Acceptor からの Broadcase メッセージを受け取る
+3. 過半数の Acceptor から Broadcast メッセージを受け取った場合、ローカル、グローバルのシステム状況をアップデートする
 
 
 ## :hammer: 使用技術
