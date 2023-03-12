@@ -48,7 +48,7 @@
 ## ShiViz Log　
 ### シナリオ
 - システム内のサーバー数：５
-- サーバー5（オレンジ）がダウン
+- サーバー5（黄色）がダウン
 
 ![ShiViz1](https://user-images.githubusercontent.com/81115999/166919675-10e1f639-7337-4310-b023-b0280741313b.png)
 
